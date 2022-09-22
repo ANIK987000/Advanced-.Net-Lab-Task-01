@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Education</title>
+</head>
+<body>
+    <div>
+        <a class="btn btn-danger" href="/student/home">Home</a>
+        <a class="btn btn-danger" href="/student/profile">Profile</a>
+        <a class="btn btn-danger" href="/student/education">Education</a>
+        <a class="btn btn-danger" href="/student/projects">Projects</a>
+        <a class="btn btn-danger" href="/student/references">References</a>
+
+        <h2>Education</h2>
+
+       <ul>
+           <li>
+               BSc in CSE
+               <ul>
+                   <li>@ViewBag.BScInstitution</li>
+                   <li>@ViewBag.Semester</li>
+                   <li>@ViewBag.CGPA</li>
+               </ul>
+           </li>
+           <li>
+               HSC
+               <ul>
+                   <li>@ViewBag.HSCinstitution</li>
+                   <li>@ViewBag.HSCyear</li>
+                   <li>@ViewBag.HSCgpa</li>
+               </ul>
+           </li>
+           <li>
+               SSC
+               <ul>
+                   <li>@ViewBag.SSCinstitution</li>
+                   <li>@ViewBag.SSCyear</li>
+                   <li>@ViewBag.SSCgpa</li>
+               </ul>
+           </li>
+       </ul>
+    </div>
+</body>
+</html>
